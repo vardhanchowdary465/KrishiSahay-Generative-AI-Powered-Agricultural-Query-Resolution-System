@@ -1,7 +1,3 @@
-from pydantic import BaseModel
 
-class QueryRequest(BaseModel):
-    question: str
-
-class QueryResponse(BaseModel):
-    answer: str
+from sqlalchemy import Column, Integer, String
+from app.database import Base
